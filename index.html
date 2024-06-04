@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./wwwroot/app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Svelte</title>
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+    <div class="mx-auto container flex flex-col gap-10 max-w-xl">
+      <c-accordion>
+        <c-accordionitem>
+          <div slot="header">A question</div>
+          <div>Answer</div>
+        </c-accordionitem>
+        <c-accordionitem>
+          <div slot="header">Another question</div>
+          <div>Answer</div>
+        </c-accordionitem>
+      </c-accordion>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <!-- <script src="./wwwroot/app.js"></script> -->
+  </body>
+</html>
